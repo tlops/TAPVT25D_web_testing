@@ -1,0 +1,86 @@
+<header>
+<!DOCTYPE html>
+<html lang="sv</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugglan Bibliotek</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;        
+        }
+      
+        /* CSS required for the buttons to be on a single row */
+        .row {
+            display: flex;
+            gap: 1em; /* Adds space between buttons */
+            flex-direction: row;
+            padding: 10px 0;
+        }
+
+          h1 {
+            font-size: 24pt;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 18pt;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .horizontal-line {
+            border: none;
+            height: 1px;
+            background-color: #a0a0a0; /* Thin gray line */
+            margin: 10px 0;
+        }
+
+        .button {
+            padding: 8px 15px;
+            border: 1px solid #a0a0a0;
+            border-radius: 4px;
+            background-color: #d8cfcf;
+            cursor: pointer;
+            font-size: 10pt;
+            /* Simple hover effect for interaction */
+            transition: background-color 0.2s;
+        }
+
+        .button:hover {
+            background-color: #dcdcdc;
+        }
+        
+        
+    </style>
+</head>
+
+<h1>Biblioteket Ugglan</h1>
+               
+        <hr class="horizontal-line">
+        
+        <div class="row">
+            <button class="button">Välkommen</button>
+            <button class="button">Sök böcker</button>
+            <button class="button">Mina lån</button>
+        </div>
+        
+        <hr class="horizontal-line">
+        
+        <h2>Öppettider</h2>
+        
+        <p>Våra öppettider är:</p>
+        
+        <ul>
+            <li>Måndag-fredag: 8-17</li>
+            <li>Lördag: 10-15</li>
+            <li>Söndag: 10-13</li>
+        </ul>
+        
+    </div>
+</body>
+</html>
