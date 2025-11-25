@@ -1,0 +1,1 @@
+## 4 Implementera E2E-tester i Playwright för utvalda scenarier. Gör så många ni hinner med.

@@ -1,0 +1,22 @@
+{
+  "name": "tapvt25d_web_testing",
+  "version": "1.0.0",
+  "description": "This repo contains assignment for the course. Each week's assigment is in the week folder. Each folder contains it's story.md file that contains the written part of the assignments.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlops/TAPVT25D_web_testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlops/TAPVT25D_web_testing/issues"
+  },
+  "homepage": "https://github.com/tlops/TAPVT25D_web_testing#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1"
+  }
+}
