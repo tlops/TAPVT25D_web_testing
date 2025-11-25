@@ -13,14 +13,14 @@ Here is a list of likely and important HTML-elements used in the site.
 ## 1c Koden för webbsidan har råkat blandas. Byt plats på kodraderna så att de står i samma ordning som på bilden. Länk till uppgiften: https://davidsvson.github.io/parsonProblem/#/ND9TA5V911g2oDGBnQou
 
 ## 1d Hitta så många fel som möjligt i följande HTML. Tips:
-"""<main> 
+```<main> 
 <section> 
 <h1> Find the error 
 <p> This is an example of an HTML file. It contains several errors. 
 <img Let's show a nice image. /> 
 <p> Can you find them all? </p> 
 </p> 
-</main>"""
+</main>```
 
 <section> the section element is not closed
 <h1> The opening tag must have a closing </h1> tag to close the 
