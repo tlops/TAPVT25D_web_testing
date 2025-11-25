@@ -38,6 +38,7 @@ def test_add_and_delete_widgets(page: Page):
     delete_icon = page.locator("div.icon.close")
     delete_icon.nth(-1).click()
 
-    # 7. Verify that the text widget is deleted
+    # 7. Verify that the note widget is deleted
+    # re-use 5
     expect(note_widgets).not_to_be_visible()
 

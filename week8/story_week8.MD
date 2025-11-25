@@ -88,3 +88,34 @@ _______________________________________________________
 |User is on main APP Screen	|I click the "Add timer" button once |A new Timer widget is displayed on the screen.| AC1.1   |
 |An “Add timer” and an “Add note” button are visible on the screen|	I click the "Add note" button.|	A second widget for notes is displayed|	AC1.2|
 |The screen contains at least one Timer widget.|I click the “basket” icon. |The Timer widget is immediately removed from the screen| AC2.1 |
+
+## Scenario for US-3: Widget Reordering
+|         GIVEN     		| 				WHEN   				 |					THEN        			    |	Acceptance Criteria     |
+|---------------------------|:----------------------------------:|:--------------------------------------------:|:-------------------------:|
+|The screen contains Widget A (Timer) and Widget B (Note), with A positioned before B.|	I click the up arrow “↑” on the widget B|Then the widgets’ positions are swapped in the UI, and B is now displayed before A| 	AC3.1|
+|The widgets have been reordered.|	The page is refreshed in the browser.|	The widgets remain in their new, reordered sequence, confirming the order was saved.|	AC3.2|
+
+
+## Scenario for US-4 & US-5: Timer Configuration and Control
+|         GIVEN     		| 				WHEN   				 |					THEN        			    |	Acceptance Criteria     |
+|---------------------------|:----------------------------------:|:--------------------------------------------:|:-------------------------:|
+|A new Timer widget is displayed (default 15:00).|I input "10" into the minutes setting field and Press “Counting down” button.|The timer display immediately changes to show "10:00".|	AC4.1, AC4.2|
+|The Timer is set to 10:00.|I click the "Start" button.| The timer begins counting down, and the button text changes to "Pause”|	AC5.1, AC5.2|
+|The Timer is actively counting down (e.g., at 08:55).|	I click the "Pause" button.|The timer stops counting down at 08:55, and the button text changes to "Start”.|AC5.2|
+|The Timer is paused at 08:55.|	I click the "Reset" button.|The timer display immediately returns to the configured time of "10:00".|	AC5.3|
+
+
+## Scenario for US-6: Note Editing
+|         GIVEN     		| 				WHEN   				 |					THEN        			    |	Acceptance Criteria     |
+|---------------------------|:----------------------------------:|:--------------------------------------------:|:-------------------------:|
+|A Note widget is on the screen with default text|	I click the text area and type the text "Remember to write report" and then click outside the note to save.|The note exits edit mode, and the text "Remember to write report" is clearly displayed in the widget.|	AC6.1, AC6.2|
+|The Note widget displays the new saved text.|The browser page is refreshed.|The Note widget still displays the text "Remember to write report", confirming persistence.|AC6.3|
+
+
+## Scenario for US-7: Theme Color Change
+|         GIVEN     		| 				WHEN   				 |					THEN        			    |	Acceptance Criteria     |
+|---------------------------|:----------------------------------:|:--------------------------------------------:|:-------------------------:|
+|The application is loaded with the default theme. |I click a theme from the list of schemes available (e.g Dark).|The main background color and widget changes to match the theme.|AC7.1, AC7.2|
+|The theme has been switched to "Dark".| The browser page is refreshed.|The application reloads, and the "Dark" theme remains active.|	AC7.3|
+
+
