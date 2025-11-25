@@ -3,12 +3,12 @@
 
 ## 1a Vilka sorters HTML-element kan du se på w3schools-sidan?
 Here is a list of likely and important HTML-elements used in the site.
-<!DOCTYPE html> is an instruction to the web browser about what version of HTML the page is written in
+´´´<!DOCTYPE html> is an instruction to the web browser about what version of HTML the page is written in
 <header> Header element: used for the top section.
 <title> Title element: To specify the title of the page.
 <h1>:  heading elements, used to the heading. It can be used in hierarchical order to show relationships between headers.
 <link> Link Element: Specifies relationships between the current document and an external resource.
-<code> and <pre>: Used to ensure code snippets are displayed in a monospaced font and maintain their formatting (line breaks, indentation) .
+<code> and <pre>: Used to ensure code snippets are displayed in a monospaced font and maintain their formatting (line breaks, indentation).´´´
 
 ## 1c Koden för webbsidan har råkat blandas. Byt plats på kodraderna så att de står i samma ordning som på bilden. Länk till uppgiften: https://davidsvson.github.io/parsonProblem/#/ND9TA5V911g2oDGBnQou
 
