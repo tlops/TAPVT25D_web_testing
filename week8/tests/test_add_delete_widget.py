@@ -1,26 +1,43 @@
-# test_widget_management.py
+# test_add_and_delete_widget.py
 import re
+import playwright.sync_api
 from playwright.sync_api import Page, expect
 
 BASE_URL = 'https://lejonmanen.github.io/timer-vue/'
+
 
 def test_add_and_delete_widgets(page: Page):
     """
     Verifies that the user can successfully add Timer and Note widgets,
     and then delete them (US-1) and (US-2).
     """
+    # 1. Go to url
     page.goto(BASE_URL)
-    # --- AC 1.1: Add Timer Widget ---
 
-    # Locate the Add Timer button and click it
-    #page.get_by_role("button", name="Add Timer").click()
+    # --- AC 1.1: The user must be able to click “Add timer” button to display a new timer session of 15 minutes by default. ---
+
+    # 2. Locate the Add Timer button and click it
+    # page.get_by_role("button", name="Add Timer").click()
     page.get_by_role("button").get_by_text("Add timer").click()
 
-    # Verify that a Timer widget is visible
-    timer_widgets = page.locator(".widget-container .timer-widget")
+    # 3. Verify that a Timer widget is created
+    timer_widgets = page.locator(".timer")
     expect(timer_widgets).to_have_count(1)
 
-    # --- AC 1.2: Add Note Widget ---
-    
-    # Locate the Add Note button and click it
-    page.get_by_role("button", name="Add note").click()
+    # --- AC 1.2: The user must be able to click “Add note” button to display a new text frame ---
+
+    # 4. Locate the Add Note button and click it
+    page.get_by_role("button").get_by_text("Add note").click()
+
+    # 5. Verify that a Note widget is visible by checking that the text "Click to change text" is visible
+    note_widgets = page.get_by_text("Click to change text")
+    expect(note_widgets).to_be_visible()
+
+    # --- AC 2.1: The user must be able to click on the “waste bin” image to DELETE a widget from the screen. ---
+    # 6. Delete the last "waste basket"
+    delete_icon = page.locator("div.icon.close")
+    delete_icon.nth(-1).click()
+
+    # 7. Verify that the text widget is deleted
+    expect(note_widgets).not_to_be_visible()
+
