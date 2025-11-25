@@ -73,11 +73,13 @@ ________________________________________________________
 	* **AC6.3**	The application must automatically save the new text, so that it remains visible after exiting the edit mode.
 
 * **US-7:**
-	* **AC7.1**	The application must have a “Select theme”, for selecting preferred them.
+	* **AC7.1** The application is loaded with default scheme “light”.
+	* **AC7.2**	The application must have a “Select theme”, for selecting preferred them.
 
-	* **AC7.2**	The user must be able to select a theme from the list of available themes, and it should be applied immediately to the UI. 
+	* **AC7.3**	The user must be able to select a theme from the list of available themes, 
+	and it should be applied immediately to the UI.  E.G select "Dark"
 
-	* **AC7.3** 	The selected theme should persist throughout the sesssion.
+	* **AC7.4** 	The selected theme should persist throughout the sesssion.
 
 _______________________________________________________
 ## 3 Skriv ner testscenarier för varje acceptanskriterium. (Ett scenario kan täcka in flera acceptanskriterier.)
@@ -115,7 +117,7 @@ _______________________________________________________
 ## Scenario for US-7: Theme Color Change
 |         GIVEN     		| 				WHEN   				 |					THEN        			    |	Acceptance Criteria     |
 |---------------------------|:----------------------------------:|:--------------------------------------------:|:-------------------------:|
-|The application is loaded with the default theme. |I click a theme from the list of schemes available (e.g Dark).|The main background color and widget changes to match the theme.|AC7.1, AC7.2|
-|The theme has been switched to "Dark".| The browser page is refreshed.|The application reloads, and the "Dark" theme remains active.|	AC7.3|
+|The application is loaded with the default theme. |I click a theme from the list of schemes available (e.g Dark).|The main background color and widget changes to match the theme.|AC7.1, AC7.2, AC7.3|
+|The theme has been switched to "Dark".| The browser page is refreshed.|The application reloads, and the "Dark" theme remains active.|	AC7.4|
 
 

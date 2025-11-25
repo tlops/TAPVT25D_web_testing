@@ -1,4 +1,16 @@
 # test_add_and_delete_widget.py
+# US-1: As a user, I want to create new widget (either a timer or a note) 
+# so that I can track time or write notes. 
+# US-2: As a user, I want to be able to delete widget that I no longer need. 
+
+"""
+US-1: 	AC1.1: The user must be able to click “Add timer” button to display a new timer session of 15 minutes by default. 
+	
+	    AC1.2: The user must be able to click “Add note” button to display a new text frame.
+
+US-2: 	AC2.1: The user must be able to click on the “waste bin” image to DELETE a widget from the screen.
+"""
+
 import re
 import playwright.sync_api
 from playwright.sync_api import Page, expect
